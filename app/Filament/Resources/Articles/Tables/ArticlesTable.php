@@ -28,7 +28,7 @@ class ArticlesTable
                 ToggleColumn::make('is_published')
                     ->label('Published'),
                 TextColumn::make('created_at')
-                    ->label('CreatedAt')
+                    ->label('CreatedAt'),
 
             ])
             ->filters([
@@ -44,7 +44,6 @@ class ArticlesTable
                     ForceDeleteBulkAction::make(),
                     RestoreBulkAction::make(),
                 ]),
-            ])
-        ;
+            ]);
     }
 }

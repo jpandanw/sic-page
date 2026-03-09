@@ -10,12 +10,13 @@ class Articles extends Model
 {
     /** @use HasFactory<\Database\Factories\ArticlesFactory> */
     use HasFactory;
+
     use SoftDeletes;
 
     protected $fillable = [
         'title',
         'content',
         'image_url',
-        'is_published'
+        'is_published',
     ];
 }

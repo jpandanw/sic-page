@@ -2,8 +2,6 @@
 
 namespace App\Filament\Resources\Events\Schemas;
 
-use Filament\Forms\Components\TextInput;
-use Filament\Schemas\Components\TextEntry;
 use Filament\Schemas\Schema;
 use Filament\Tables\Columns\TextColumn;
 
@@ -34,8 +32,8 @@ class EventsInfolist
                 TextColumn::make('is_published')
                     ->label('Published')
                     ->badge()
-                    ->color(fn(bool $state) => $state ? 'success' : 'danger')
-                    ->formatStateUsing(fn(bool $state) => $state ? 'Yes' : 'No'),
+                    ->color(fn (bool $state) => $state ? 'success' : 'danger')
+                    ->formatStateUsing(fn (bool $state) => $state ? 'Yes' : 'No'),
             ]);
     }
 }

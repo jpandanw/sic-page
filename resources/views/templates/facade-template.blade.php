@@ -96,7 +96,7 @@
                 <li>
                     <details>
                         <summary class="font-semibold">📰 News & Events</summary>
-                        <ul class="bg-base-100 text-primary rounded-lg shadow-lg p-2 w-48">
+                        <ul class="bg-base-100 text-primary rounded-lg shadow-lg p-2 w-60">
                             <li><a href="/announcements">📢 Announcements</a></li>
                             <li><a href="/events">📅 Events</a></li>
                             <li><a href="/articles">📰 Articles</a></li>

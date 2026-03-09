@@ -10,6 +10,7 @@ class Carousel extends Model
 {
     /** @use HasFactory<\Database\Factories\CarouselFactory> */
     use HasFactory;
+
     use SoftDeletes;
 
     protected $fillable = [

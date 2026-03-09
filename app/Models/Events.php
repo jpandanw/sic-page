@@ -10,6 +10,7 @@ class Events extends Model
 {
     /** @use HasFactory<\Database\Factories\EventsFactory> */
     use HasFactory;
+
     use SoftDeletes;
 
     protected $fillable = [
@@ -19,7 +20,7 @@ class Events extends Model
         'start_date',
         'end_date',
         'location',
-        'is_published'
+        'is_published',
     ];
 
     protected $casts = [

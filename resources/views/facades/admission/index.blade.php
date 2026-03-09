@@ -40,36 +40,6 @@
         </div>
     </div>
 
-    <!-- Admission Timeline -->
-    <div class="mb-12">
-        <h2 class="text-3xl font-bold text-base-content mb-8 text-center">Admission Timeline</h2>
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-            <div class="card bg-blue-50 border-l-4 border-blue-500">
-                <div class="card-body">
-                    <h3 class="font-bold text-blue-700">January - March</h3>
-                    <p class="text-sm text-base-content/70">Application Period Opens</p>
-                </div>
-            </div>
-            <div class="card bg-green-50 border-l-4 border-green-500">
-                <div class="card-body">
-                    <h3 class="font-bold text-green-700">April - May</h3>
-                    <p class="text-sm text-base-content/70">Entrance Exams & Interviews</p>
-                </div>
-            </div>
-            <div class="card bg-yellow-50 border-l-4 border-yellow-500">
-                <div class="card-body">
-                    <h3 class="font-bold text-yellow-700">June</h3>
-                    <p class="text-sm text-base-content/70">Announcement of Results</p>
-                </div>
-            </div>
-            <div class="card bg-purple-50 border-l-4 border-purple-500">
-                <div class="card-body">
-                    <h3 class="font-bold text-purple-700">July - August</h3>
-                    <p class="text-sm text-base-content/70">Enrollment Period</p>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Programs Admission Requirements -->
     <h2 class="text-3xl font-bold text-base-content mb-8">Admission Requirements by Level</h2>

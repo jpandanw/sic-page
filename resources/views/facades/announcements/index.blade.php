@@ -44,16 +44,16 @@ use Carbon\Carbon;
     <!-- Announcements Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-        @foreach ($announcements as $i)
-            <a class="card bg-base-100 shadow-md hover:shadow-lg hover:scale-105 transition-all ease-in-out overflow-hidden group" href="/announcements/{{ $i['id'] }}">
+        @foreach ($announcements as $announcement)
+            <a class="card bg-base-100 shadow-md hover:shadow-lg hover:scale-105 transition-all ease-in-out overflow-hidden group" href="/announcements/{{ $announcement->id }}">
                 <figure class="aspect-video overflow-hidden">
-                    <img src="/storage/{{$i['image_url']}}" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                    <img src="/storage/{{ $announcement->image_url }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform" alt="{{ $announcement->title }}" />
                 </figure>
                 <div class="card-body">
-                    <h3 class="card-title text-lg line-clamp-2 text-primary">{{$i['title']}}</h3>
-                    <p class="text-sm text-base-content/70 line-clamp-3">{!! $i['description'] !!}</p>
+                    <h3 class="card-title text-lg line-clamp-2 text-primary">{{ $announcement->title }}</h3>
+                    <p class="text-sm text-base-content/70 line-clamp-3">{!! $announcement->description !!}</p>
                     <div class="flex justify-between items-center text-xs text-base-content/60 pt-2 border-t border-base-300">
-                        <span>{{ $i['created_at']->diffForHumans() }}</span>
+                        <span>{{ $announcement->created_at->diffForHumans() }}</span>
                         <span class="btn btn-xs btn-primary">Read More →</span>
                     </div>
                 </div>

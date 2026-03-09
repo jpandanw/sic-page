@@ -48,7 +48,6 @@ class EventsTable
                     ForceDeleteBulkAction::make(),
                     RestoreBulkAction::make(),
                 ]),
-            ])
-        ;
+            ]);
     }
 }

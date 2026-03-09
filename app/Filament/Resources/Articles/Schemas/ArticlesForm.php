@@ -2,12 +2,10 @@
 
 namespace App\Filament\Resources\Articles\Schemas;
 
-use Filament\Forms\Components\Checkbox;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
-use Filament\Schemas\Components\Image;
 use Filament\Schemas\Schema;
 
 class ArticlesForm
@@ -19,7 +17,6 @@ class ArticlesForm
                 TextInput::make('title')
                     ->label('Title')
                     ->required(),
-
 
                 Toggle::make('is_published')
                     ->label('Publish?'),
@@ -37,7 +34,6 @@ class ArticlesForm
                     ->required()
                     ->fileAttachments(true)
                     ->fileAttachmentsDirectory('uploads'),
-
 
             ]);
     }

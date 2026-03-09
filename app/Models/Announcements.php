@@ -10,11 +10,23 @@ class Announcements extends Model
 {
     /** @use HasFactory<\Database\Factories\AnnouncementsFactory> */
     use HasFactory;
+
     use SoftDeletes;
 
     protected $fillable = [
         'title',
+        'image_url',
+        'description',
         'content',
-        'is_published'
+        'is_published',
     ];
+
+    protected function casts(): array
+    {
+        return [
+            'is_published' => 'boolean',
+            'created_at' => 'datetime',
+            'updated_at' => 'datetime',
+        ];
+    }
 }

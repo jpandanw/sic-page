@@ -19,8 +19,6 @@ class EventsForm
                     ->label('Title')
                     ->required(),
 
-
-
                 FileUpload::make('image_url')
                     ->label('Image')
                     ->disk('public')
@@ -29,11 +27,9 @@ class EventsForm
                     ->image()
                     ->imageEditor(),
 
-
                 DateTimePicker::make('start_date')
                     ->label('Start Date')
                     ->required(),
-
 
                 DateTimePicker::make('end_date')
                     ->label('End Date'),

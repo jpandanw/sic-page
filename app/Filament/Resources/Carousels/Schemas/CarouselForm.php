@@ -6,7 +6,6 @@ use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Schemas\Schema;
-use Filament\Tables\Columns\ImageColumn;
 
 class CarouselForm
 {

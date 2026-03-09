@@ -10,8 +10,8 @@ class Downloadable extends Model
 {
     /** @use HasFactory<\Database\Factories\DownloadableFactory> */
     use HasFactory;
-    use SoftDeletes;
 
+    use SoftDeletes;
 
     protected $fillable = [
         'text',
