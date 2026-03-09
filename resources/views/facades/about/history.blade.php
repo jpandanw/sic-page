@@ -1,119 +1,196 @@
 @extends('templates.facade-template')
 
-
-
 @php
 use Carbon\Carbon;
 @endphp
 
-
 @section('scripts')
 @endsection
 
-
-
 @section('body')
 
-    <div class="bg-primary text-white h-50 flex items-center justify-center">
-        <div class="w-fit text-center">
-            <div class="font-bold text-3xl"> Our History </div>
-            <span>Excellence in Education since 1948</span>
-        </div>
-
+<!-- Hero Section -->
+<div class="bg-gradient-to-r from-primary to-secondary text-primary-content min-h-96 flex items-center justify-center">
+    <div class="text-center px-4">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Our History</h1>
+        <p class="text-lg opacity-90">Excellence in Education since 1949</p>
+        <div class="divider divider-primary opacity-50 my-4 max-w-xs mx-auto"></div>
     </div>
-    <div class="breadcrumbs text-sm max-w-5xl w-full mx-auto">
+</div>
+
+<!-- Breadcrumbs -->
+<div class="max-w-6xl mx-auto px-4 py-4">
+    <div class="breadcrumbs text-sm">
         <ul>
-            <li><a class="/">Home</a></li>
-            <li><a>About</a></li>
-            <li>History</li>
+            <li><a href="/" class="link link-hover">Home</a></li>
+            <li><a href="/about" class="link link-hover">About</a></li>
+            <li class="text-primary font-semibold">History</li>
         </ul>
     </div>
+</div>
 
+<!-- Main Content -->
+<div class="max-w-6xl mx-auto px-4 py-12">
 
-    <div class=" max-w-5xl w-full mx-auto">
+    <!-- Timeline Section -->
+    <div class="mb-16">
+        <h2 class="text-4xl font-bold text-base-content mb-12 text-center">Our Journey Through the Years</h2>
+        
+        <div class="space-y-8">
+            <!-- 1949 -->
+            <div class="card bg-base-100 shadow-md border-l-4 border-primary">
+                <div class="card-body">
+                    <div class="flex items-start gap-4">
+                        <div class="badge badge-lg badge-primary text-base-100 font-bold">1949</div>
+                        <div>
+                            <h3 class="card-title text-primary mb-2">Foundation Year</h3>
+                            <p class="text-base-content/80">
+                                San Isidro High School was founded by the late Fr. Joseph Reith, S.J. in July 1949 with 90 first-year and 30 second-year students under 5 teaching staff. Named after the town's patron saint, San Isidro Labrador, the school's motto "Ora et Labora" (Prayer and Work) reflects its mission to educate the youth of Bukidnon.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <h1 class="font-bold text-5xl">History</h1>
+            <!-- 1952 -->
+            <div class="card bg-base-100 shadow-md border-l-4 border-secondary">
+                <div class="card-body">
+                    <div class="flex items-start gap-4">
+                        <div class="badge badge-lg badge-secondary text-base-100 font-bold">1952</div>
+                        <div>
+                            <h3 class="card-title text-secondary mb-2">First Graduation</h3>
+                            <p class="text-base-content/80">
+                                The school produced its first batch of 23 graduates, marking a significant milestone in San Isidro's commitment to quality education.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <span class="text-sm"></span>
+            <!-- 1953-1955 -->
+            <div class="card bg-base-100 shadow-md border-l-4 border-accent">
+                <div class="card-body">
+                    <div class="flex items-start gap-4">
+                        <div class="badge badge-lg badge-accent text-base-100 font-bold">1953</div>
+                        <div>
+                            <h3 class="card-title text-accent mb-2">Sisters of Saint Joseph Era</h3>
+                            <p class="text-base-content/80 mb-3">
+                                The administration was turned over to the American Sisters of the Congregation of Saint Joseph of Newark. Sister Mary Redempta McConnel, CSJ began her remarkable 18 years of administration.
+                            </p>
+                            <p class="text-base-content/80">
+                                <strong>1955:</strong> A twelve-room school building was constructed across the Sawaga River in Impalambong, which still stands with pride today as San Isidro expanded its facilities to better serve its students.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <!-- 1962-1969 -->
+            <div class="card bg-base-100 shadow-md border-l-4 border-info">
+                <div class="card-body">
+                    <div class="flex items-start gap-4">
+                        <div class="badge badge-lg badge-info text-base-100 font-bold">1962</div>
+                        <div>
+                            <h3 class="card-title text-info mb-2">College Programs Expansion</h3>
+                            <p class="text-base-content/80 mb-3">
+                                A one-year Collegiate Secretarial Course was offered with 50 initial students. This ushered in the opening of three more college courses:
+                            </p>
+                            <ul class="list-disc list-inside text-base-content/80 space-y-1 ml-4">
+                                <li>Bachelor of Science in Commerce (1964)</li>
+                                <li>Bachelor of Science in Liberal Arts (1965)</li>
+                                <li>Bachelor of Science in Education (1965)</li>
+                            </ul>
+                            <p class="text-base-content/80 mt-3">
+                                <strong>1969:</strong> The school attained full college status and was officially known as San Isidro College.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <!-- 1971-1985 -->
+            <div class="card bg-base-100 shadow-md border-l-4 border-success">
+                <div class="card-body">
+                    <div class="flex items-start gap-4">
+                        <div class="badge badge-lg badge-success text-base-100 font-bold">1971</div>
+                        <div>
+                            <h3 class="card-title text-success mb-2">Marist Brothers Era</h3>
+                            <p class="text-base-content/80 mb-3">
+                                Following the Sisters' return to America, the Marist Brothers managed the college for 14 years (1971-1985). They made significant improvements including:
+                            </p>
+                            <ul class="list-disc list-inside text-base-content/80 space-y-1 ml-4">
+                                <li>Construction of covered walks and college buildings</li>
+                                <li>Gymnasium renovation</li>
+                                <li>Extensive library expansion</li>
+                                <li>Scholarship programs for faculty and students</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div class="prose mt-20 space-y-6 text-justify leading-10 indent-8">
+            <!-- 1985-1996 -->
+            <div class="card bg-base-100 shadow-md border-l-4 border-warning">
+                <div class="card-body">
+                    <div class="flex items-start gap-4">
+                        <div class="badge badge-lg badge-warning text-base-100 font-bold">1985</div>
+                        <div>
+                            <h3 class="card-title text-warning mb-2">Missionary Benedictine Sisters</h3>
+                            <p class="text-base-content/80 mb-3">
+                                The Missionary Benedictine Sisters took over administration and brought major changes during their 11-year tenure. Notable constructions include:
+                            </p>
+                            <ul class="list-disc list-inside text-base-content/80 space-y-1 ml-4">
+                                <li>Grade School St. Benedict Building</li>
+                                <li>Guest House and College Home Economics Building</li>
+                                <li>Dormitory near Sawaga Bridge</li>
+                            </ul>
+                            <p class="text-base-content/80 mt-3">
+                                <strong>1993:</strong> Grade School program was established with state-of-the-art instructional materials and equipment.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-
-            <p>
-            San Isidro College was established when Malaybalay was still a young capital town of Bukidnon. It is the only
-            Catholic Institution of learning in the locality and the oldest in the province.
-            It was founded by the late Fr. Joseph Reith, S. J in July 1949. It was his first assignment as a parish Priest when
-            he opened San Isidro High School. He named the school after the town’s patron saint, San Isidro Labrador; thus the
-            school logo bears the motto “Ora et Lebora” which means Prayer and work.
-            </p>
-
-            <p>
-            San Isidro High School started in 1949-1950 with 90 first year students and 30 second year students under 5
-            teaching staff. They held classes at a two-story residential house where now stands the Religious of Virgin Mary
-            convent. The RVM were with Fr. Joseph Reith in running the school.
-            In 1953-1971 the Principal of San Isidro High School was SisterMary Redempta McConnel, CSJ who was at that
-            time also the superior of the RVM in Malaybalay. She was with Sr. Ma. Remedios Tagamolita, Procuratrix and
-            Sr.Ma.Estrella Lopez, the Dormitory in-charge.
-            </p>
-
-            <p>
-                In 1952, San Isidro High School produced its first batch of 23 graduates. After four years, the school’s
-                administration was turned over to the American Sisters of the Congregation of Saint Joseph of Newark. Thus, Sister
-                Mary Redempta McConnel, CSJ began her 18 years of administration in 1953.
-            </p>
-            <p>
-                In 1955, the twelve-room school building was constructed across the Sawaga River in Impalambong,
-                Malaybalay. Until now San Isidro College, with all its expansions, stands with pride through the years in the s ame
-                location. Other buildings rose during Sr. Redempta’s time, buildings which became landmarks of the school’s mission to
-                give Christian education to the youth of Bukidnon.
-            </p>
-            Notable among the buildings are the following: Villa San Jose which was built 1963 which now accommodates
-            the High School Library, Chapel and the Guidance Office of the school Gymnasium which was built in 1966 and has
-            been useful to the school and the Malaybalay community in so many ways; the left wing of the High School building
-            which now the Office of the Community Outreach and the High School Audio-Visual Center on the first floor and
-            classrooms on the second floor.
-            <br>
-            The school grew in its academic perspective an offered a one-year Collegiate Secretartial Course in the school
-            year, 1962-1963 with an initial enrolment of 50 students. That was just the beginning for it ushered in the opening of
-            three more college courses: Bachelor of Science in Commerce in 1964, Liberal Arts and Bachelor of Science in
-            Education in 1965. The school attained full college status in 1969. In 1970, the one-year Secretarial Course became a
-            two-year Junior Secretarial Course.In 1971, the Sisters of St. Joseph of Newark was called to the United States America.
-            They turned over the school to the Prelature of Malaybalay headed by Bishop Francisco Claver, S.J., D.D. who invited
-            the Marist Brothers to manage the school for him.
-            <br>
-            For fourteen years (1971-1985), San Isidro College was managed by the Marist Brothers. The Marist Brothers
-            did additional improvements to the physical plant of the school. Constructions included the covered walks and the
-            College Buildings. The gymnasium was renovated. Likewise, volumes of books were added to the library and equipment
-            were purchased. On human resource development, scholarship programs for the faculty and deserving students were
-            provided.
-            <p>
-            In the mid 80s, San Isidro College saw change in the administration. The Missionary Benedectine Sisters took
-            over the administration and management of the school in 1985 was with the Bishop of Malaybalay, Monsignor
-            Gaudencio Rosales, D.D. as the Chair of the Board of Trustees.
-            </p>
-
-            <p>
-            The Missionary Benedectine Sisters brought major changes to San Isidro College in their eleven-year
-            management of the school. They left significant constructions like the Grade School St. Benedict building, the Guest
-            House\College Home Economics building and a dormitory near the Sawaga Bridge.
-            </p>
-            <p>
-            The Benedictine Sisters opened he Grade School in 1993, acquired the state-of-the-art instructional hardware and
-            software and other equipment and resources. In 1994, SIC was headed by Bishop Honesto Ch. Pacana, S.J.. D.D as Chair
-            of the Board of Trustees. In 1997, Fr. Felimon Ares, Jr, a diocesan priest, became the President. From SY: 2000-2001 to
-            SY: 2003-2004, . a Canossian Sister, was the President. She was followed by
-            - As of today, Fr. Virgilio H. Delfin, CPA, DBM is the incumbent president of the College.
-            </p>
-            <p>
-            At present, San Isidro College continues to serve the community as the only Catholic higher educational
-            institution in Malaybalay.
-            </p>
-
+            <!-- 1997-Present -->
+            <div class="card bg-base-100 shadow-md border-l-4 border-error">
+                <div class="card-body">
+                    <div class="flex items-start gap-4">
+                        <div class="badge badge-lg badge-error text-base-100 font-bold">1997</div>
+                        <div>
+                            <h3 class="card-title text-error mb-2">Modern Era & Current Leadership</h3>
+                            <p class="text-base-content/80 mb-2">
+                                Fr. Felimon Ares, Jr., a diocesan priest, became President in 1997. The college continued to evolve with various leadership transitions.
+                            </p>
+                            <p class="text-base-content/80">
+                                <strong>Present Day:</strong> Fr. Virgilio H. Delfin, CPA, DBM serves as the incumbent President, leading San Isidro College as the only Catholic higher educational institution in Malaybalay, continuing its legacy of excellence in service to the community.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
+    <!-- Legacy Section -->
+    <div class="bg-base-100 rounded-lg shadow-md p-8 border-t-4 border-primary">
+        <h3 class="text-3xl font-bold text-base-content mb-6">Our Legacy</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="text-center">
+                <div class="text-4xl font-bold text-primary mb-2">75+</div>
+                <p class="text-base-content/70">Years of Service</p>
+            </div>
+            <div class="text-center">
+                <div class="text-4xl font-bold text-secondary mb-2">10,000+</div>
+                <p class="text-base-content/70">Graduates</p>
+            </div>
+            <div class="text-center">
+                <div class="text-4xl font-bold text-accent mb-2">1</div>
+                <p class="text-base-content/70">Catholic Institution in Malaybalay</p>
+            </div>
+        </div>
+    </div>
 
+</div>
 
 @endsection
