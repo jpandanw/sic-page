@@ -41,41 +41,6 @@ use Carbon\Carbon;
         </div>
     </div>
 
-    <!-- Filter & Search Section -->
-    <div class="mb-8 flex flex-col md:flex-row gap-4 justify-between items-center">
-        <div class="flex gap-2 flex-wrap">
-            <button class="btn btn-sm btn-accent">All Articles</button>
-            <button class="btn btn-sm btn-outline">Education</button>
-            <button class="btn btn-sm btn-outline">Campus Life</button>
-            <button class="btn btn-sm btn-outline">Student Spotlight</button>
-            <button class="btn btn-sm btn-outline">Faculty Insights</button>
-        </div>
-        <div class="form-control w-full md:w-64">
-            <input type="text" placeholder="Search articles..." class="input input-bordered" />
-        </div>
-    </div>
-
-    <!-- Featured Article -->
-    <div class="card bg-gradient-to-r from-accent/10 to-primary/10 shadow-lg border-l-4 border-accent mb-12">
-        <div class="card-body md:card-side gap-6">
-            <figure class="md:w-1/3">
-                <img src="/api/placeholder/500/300" alt="Featured Article" class="rounded-lg w-full h-full object-cover" />
-            </figure>
-            <div class="md:w-2/3">
-                <div class="flex items-center gap-2 mb-3">
-                    <span class="badge badge-accent text-white">Featured</span>
-                    <span class="text-xs text-base-content/50">5 days ago</span>
-                </div>
-                <h2 class="card-title text-2xl text-accent mb-3">Advancing Education Through Technology Integration</h2>
-                <p class="text-base-content/80 mb-4 leading-relaxed">
-                    Discover how San Isidro College is leveraging cutting-edge technology to enhance the learning experience. From virtual classrooms to interactive learning platforms, our institution is committed to preparing students for the digital age...
-                </p>
-                <p class="text-sm text-base-content/60 mb-6">By Dr. Maria Santos | Education Technology</p>
-                <button class="btn btn-accent">Read Full Article</button>
-            </div>
-        </div>
-    </div>
-
     <!-- Articles Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
 

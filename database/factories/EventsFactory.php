@@ -22,6 +22,7 @@ class EventsFactory extends Factory
             'start_date' => $this->faker->dateTime(),
             'end_date' => $this->faker->optional()->dateTime(),
             'location' => $this->faker->optional()->address(),
+            'image_url' => $this->faker->imageUrl(),
             'is_published' => $this->faker->boolean(),
         ];
     }

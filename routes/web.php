@@ -46,7 +46,9 @@ Route::get('/announcements/{id}', function ($id) {
 });
 
 Route::get('/events', function () {
-    $events = Events::orderBy('start_date', 'desc')->paginate(20);
+    $events = Events::where('is_published', true)
+        ->orderBy('start_date', 'desc')
+        ->paginate(12);
 
     return view('facades/events-list/index', [
         'events' => $events,
@@ -54,10 +56,20 @@ Route::get('/events', function () {
 });
 
 Route::get('/articles', function () {
-    $articles = Articles::orderBy('created_at', 'desc')->paginate(20);
+    $articles = Articles::where('is_published', true)
+        ->orderBy('created_at', 'desc')
+        ->paginate(20);
 
     return view('facades/articles/index', [
         'articles' => $articles,
+    ]);
+});
+
+Route::get('/articles/{id}', function ($id) {
+    $article = Articles::where('is_published', true)->findOrFail($id);
+
+    return view('facades/articles/show', [
+        'article' => $article,
     ]);
 });
 
