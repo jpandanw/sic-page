@@ -13,13 +13,14 @@
 @endsection
 
 @section('body')
-<!-- Hero Carousel Section -->
-<div class="splide splide--hero max-h-170 hero relative mx-auto overflow-hidden" role="group" aria-label="College Carousel">
+
+<div class="splide">
     <div class="splide__track">
+
         <ul class="splide__list">
             @forelse ($carousel as $item)
             <li class="splide__slide relative">
-                <img src="/storage/{{ $item->image_url }}" alt="{{ $item->title }}" class="w-full h-screen object-cover" loading="lazy">
+                <img src="/storage/{{ $item->image_url }}" alt="{{ $item->title }}" class="w-full  object-cover" loading="lazy">
                 <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50"></div>
             </li>
             @empty
@@ -33,6 +34,13 @@
             </li>
             @endforelse
         </ul>
+    </div>
+</div>
+
+
+<!-- Hero Carousel Section -->
+<div class="splide splide--hero max-h-170 hero relative mx-auto overflow-hidden" role="group" aria-label="College Carousel">
+    <div class="splide__track">
     </div>
     <!-- Carousel Controls -->
     @if ($carousel->count() > 1)
@@ -65,7 +73,7 @@
                     <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <!-- Image -->
                     <div class="relative">
-                        <img src="/sic.png" class="w-48 h-48 md:w-56 md:h-56 object-cover rounded-2xl shadow-xl border-4 border-base-100 group-hover:scale-105 transition-transform duration-500" data-aos="zoom-in"/>
+                        <img src="/sic.png" class="w-48 h-48 md:w-56 md:h-56 object-cover rounded-2xl shadow-xl border-4 border-base-100 group-hover:scale-105 transition-transform duration-500" data-aos="zoom-in" />
                         <!-- Decorative frame -->
                         <div class="absolute -inset-1 bg-gradient-to-br from-primary to-secondary rounded-2xl opacity-0 group-hover:opacity-20 blur transition-opacity duration-500 -z-10"></div>
                     </div>
@@ -92,7 +100,9 @@
 
                     <a href="/about" class="btn btn-primary btn-lg mt-8 w-fit shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300" data-aos="fade-right" data-aos-delay="200">
                         Learn More About Us
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                        </svg>
                     </a>
                 </div>
             </div>
@@ -123,7 +133,9 @@
                     <h3 class="card-title text-2xl text-pink-900 font-outfit">Preschool</h3>
                     <p class="text-pink-700 mb-4">Nurture early development through play-based learning and creative activities.</p>
                     <div class="flex items-center text-pink-600 font-semibold group-hover:text-pink-900 transition-colors">
-                        Learn More <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+                        Learn More <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                        </svg>
                     </div>
                 </div>
             </a>
@@ -134,7 +146,9 @@
                     <h3 class="card-title text-2xl text-blue-900 font-outfit">Elementary</h3>
                     <p class="text-blue-700 mb-4">Build strong foundations with our comprehensive curriculum designed for young learners.</p>
                     <div class="flex items-center text-blue-600 font-semibold group-hover:text-blue-900 transition-colors">
-                        Learn More <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+                        Learn More <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                        </svg>
                     </div>
                 </div>
             </a>
@@ -145,7 +159,9 @@
                     <h3 class="card-title text-2xl text-purple-900 font-outfit">Junior & Senior High</h3>
                     <p class="text-purple-700 mb-4">Discover your passions and excel with specialized tracks preparing you for higher education.</p>
                     <div class="flex items-center text-purple-600 font-semibold group-hover:text-purple-900 transition-colors">
-                        Learn More <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+                        Learn More <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                        </svg>
                     </div>
                 </div>
             </a>
@@ -156,7 +172,9 @@
                     <h3 class="card-title text-2xl text-amber-900 font-outfit">College</h3>
                     <p class="text-amber-700 mb-4">Advance your career with degree programs and professional development opportunities.</p>
                     <div class="flex items-center text-amber-600 font-semibold group-hover:text-amber-900 transition-colors">
-                        Learn More <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+                        Learn More <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                        </svg>
                     </div>
                 </div>
             </a>
@@ -166,7 +184,9 @@
         <div class="text-center" data-aos="fade-up" data-aos-delay="400">
             <a href="/programs" class="btn btn-lg bg-gradient-to-r from-secondary to-accent text-white shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 border-0 font-semibold">
                 View All Programs
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
             </a>
         </div>
     </div>
@@ -189,34 +209,34 @@
         <!-- Events Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             @forelse ($events as $i)
-                <a href="/events/{{ $i['id'] }}" class="group card bg-base-100 shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-base-300 hover:border-secondary/50 h-full flex flex-col" data-aos="fade-up">
-                    <!-- Event Image Container -->
-                    <div class="relative overflow-hidden bg-gray-300 h-48 flex-shrink-0">
-                        <img src="/storage/{{$i['image_url']}}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
-                        <!-- Overlay -->
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <!-- Date Badge -->
-                        <div class="absolute top-4 left-4 badge badge-lg badge-primary gap-2 text-white font-bold shadow-lg">
-                            <span class="text-xl">{{ $i['start_date']->day }}</span>
-                            <span class="text-sm">{{ $i['start_date']->format('M') }}</span>
-                        </div>
+            <a href="/events/{{ $i['id'] }}" class="group card bg-base-100 shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-base-300 hover:border-secondary/50 h-full flex flex-col" data-aos="fade-up">
+                <!-- Event Image Container -->
+                <div class="relative overflow-hidden bg-gray-300 h-48 flex-shrink-0">
+                    <img src="/storage/{{$i['image_url']}}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                    <!-- Overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <!-- Date Badge -->
+                    <div class="absolute top-4 left-4 badge badge-lg badge-primary gap-2 text-white font-bold shadow-lg">
+                        <span class="text-xl">{{ $i['start_date']->day }}</span>
+                        <span class="text-sm">{{ $i['start_date']->format('M') }}</span>
                     </div>
-
-                    <!-- Event Content -->
-                    <div class="card-body pt-6 flex-grow flex flex-col">
-                        <h3 class="card-title text-lg text-primary line-clamp-2 group-hover:text-secondary transition-colors font-outfit">{{$i['title']}}</h3>
-                        <p class="text-sm text-base-600 line-clamp-3 flex-grow">{!! $i['description'] !!}</p>
-                        <div class="card-actions justify-end mt-4 pt-2 border-t border-base-300">
-                            <span class="badge badge-outline badge-secondary font-semibold">Discover Event</span>
-                        </div>
-                    </div>
-                </a>
-            @empty
-                <div class="col-span-full text-center py-16">
-                    <div class="text-6xl mb-4">🗓️</div>
-                    <p class="text-xl text-base-600 font-semibold">No events scheduled at this time.</p>
-                    <p class="text-base-500 mt-2">Check back soon for exciting campus activities!</p>
                 </div>
+
+                <!-- Event Content -->
+                <div class="card-body pt-6 flex-grow flex flex-col">
+                    <h3 class="card-title text-lg text-primary line-clamp-2 group-hover:text-secondary transition-colors font-outfit">{{$i['title']}}</h3>
+                    <p class="text-sm text-base-600 line-clamp-3 flex-grow">{!! $i['description'] !!}</p>
+                    <div class="card-actions justify-end mt-4 pt-2 border-t border-base-300">
+                        <span class="badge badge-outline badge-secondary font-semibold">Discover Event</span>
+                    </div>
+                </div>
+            </a>
+            @empty
+            <div class="col-span-full text-center py-16">
+                <div class="text-6xl mb-4">🗓️</div>
+                <p class="text-xl text-base-600 font-semibold">No events scheduled at this time.</p>
+                <p class="text-base-500 mt-2">Check back soon for exciting campus activities!</p>
+            </div>
             @endforelse
         </div>
     </div>
@@ -240,32 +260,32 @@
         <!-- Announcements Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             @forelse ($announcements as $announcement)
-                <a href="/announcements/{{ $announcement->id }}" class="group card bg-base-100 shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-base-300 hover:border-accent/50 h-full flex flex-col" data-aos="fade-up">
-                    <!-- Announcement Image -->
-                    <div class="relative overflow-hidden bg-gray-300 h-40 flex-shrink-0">
-                        <img src="/storage/{{$announcement->image_url}}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="announcement">
-                        <!-- Time Badge -->
-                        <div class="absolute top-3 right-3">
-                            <span class="badge badge-accent text-xs font-bold shadow-lg">{{ $announcement->created_at->diffForHumans() }}</span>
-                        </div>
+            <a href="/announcements/{{ $announcement->id }}" class="group card bg-base-100 shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-base-300 hover:border-accent/50 h-full flex flex-col" data-aos="fade-up">
+                <!-- Announcement Image -->
+                <div class="relative overflow-hidden bg-gray-300 h-40 flex-shrink-0">
+                    <img src="/storage/{{$announcement->image_url}}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="announcement">
+                    <!-- Time Badge -->
+                    <div class="absolute top-3 right-3">
+                        <span class="badge badge-accent text-xs font-bold shadow-lg">{{ $announcement->created_at->diffForHumans() }}</span>
                     </div>
-
-                    <!-- Announcement Content -->
-                    <div class="card-body pt-4 flex-grow flex flex-col">
-                        <h3 class="card-title text-base text-primary line-clamp-2 group-hover:text-accent transition-colors font-outfit">{{$announcement->title}}</h3>
-                        <p class="text-sm text-base-600 line-clamp-3 flex-grow">{!! $announcement->description !!}</p>
-                        <div class="card-actions justify-between items-center mt-3 pt-3 border-t border-base-300">
-                            <span class="text-xs text-base-500 font-medium">{{ $announcement->created_at->format('M d, Y') }}</span>
-                            <span class="badge badge-outline badge-accent text-xs font-semibold">Read More →</span>
-                        </div>
-                    </div>
-                </a>
-            @empty
-                <div class="col-span-full text-center py-16">
-                    <div class="text-6xl mb-4">📢</div>
-                    <p class="text-xl text-base-600 font-semibold">No announcements at this time.</p>
-                    <p class="text-base-500 mt-2">Stay tuned for updates!</p>
                 </div>
+
+                <!-- Announcement Content -->
+                <div class="card-body pt-4 flex-grow flex flex-col">
+                    <h3 class="card-title text-base text-primary line-clamp-2 group-hover:text-accent transition-colors font-outfit">{{$announcement->title}}</h3>
+                    <p class="text-sm text-base-600 line-clamp-3 flex-grow">{!! $announcement->description !!}</p>
+                    <div class="card-actions justify-between items-center mt-3 pt-3 border-t border-base-300">
+                        <span class="text-xs text-base-500 font-medium">{{ $announcement->created_at->format('M d, Y') }}</span>
+                        <span class="badge badge-outline badge-accent text-xs font-semibold">Read More →</span>
+                    </div>
+                </div>
+            </a>
+            @empty
+            <div class="col-span-full text-center py-16">
+                <div class="text-6xl mb-4">📢</div>
+                <p class="text-xl text-base-600 font-semibold">No announcements at this time.</p>
+                <p class="text-base-500 mt-2">Stay tuned for updates!</p>
+            </div>
             @endforelse
         </div>
 
@@ -273,7 +293,9 @@
         <div class="text-center" data-aos="fade-up">
             <a href="/announcements" class="btn btn-lg btn-outline btn-accent shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 font-semibold">
                 View All Announcements
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
             </a>
         </div>
     </div>
@@ -296,7 +318,9 @@
         <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="200">
             <a href="/admission" class="btn btn-lg btn-outline border-2 border-white text-white hover:bg-white hover:text-primary hover:border-white shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 font-semibold">
                 🚀 Apply Now
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
             </a>
             <a href="/programs" class="btn btn-lg btn-ghost text-white hover:bg-white/20 border-2 border-white/50 hover:border-white shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 font-semibold">
                 📚 Explore Programs
@@ -306,15 +330,22 @@
         <!-- Trust badges -->
         <div class="mt-12 flex flex-wrap gap-6 justify-center items-center opacity-90 text-sm font-semibold" data-aos="fade-up" data-aos-delay="400">
             <div class="flex items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
                 <span>Excellence Certified</span>
             </div>
             <div class="flex items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                </svg>
                 <span>1000+ Students</span>
             </div>
             <div class="flex items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+                </svg>
                 <span>Expert Faculty</span>
             </div>
         </div>
@@ -324,10 +355,10 @@
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         // Initialize Splide carousel
-        const splideElement = document.querySelector('.splide--hero');
+        const splideElement = document.querySelector('.splide');
         if (splideElement) {
             try {
-                const splide = new Splide('.splide--hero', {
+                const splide = new Splide('.splide', {
                     type: 'loop',
                     autoplay: true,
                     interval: 5000,
@@ -336,27 +367,29 @@
                     pagination: true,
                     perPage: 1,
                     gap: 0,
+                    // prevButton: '.splide__arrow--prev',
+                    // nextButton: '.splide__arrow--next',
                 });
 
                 // Mount the carousel
                 splide.mount();
 
-                // Connect custom arrow buttons after mount
-                const prevBtn = document.querySelector('.splide__arrow--prev');
-                const nextBtn = document.querySelector('.splide__arrow--next');
+                // // Connect custom arrow buttons after mount
+                // const prevBtn = document.querySelector('.splide__arrow--prev');
+                // const nextBtn = document.querySelector('.splide__arrow--next');
 
-                if (prevBtn) {
-                    prevBtn.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        splide.go('<');
-                    });
-                }
-                if (nextBtn) {
-                    nextBtn.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        splide.go('>');
-                    });
-                }
+                //              if (prevBtn) {
+                //     prevBtn.addEventListener('click', function(e) {
+                //         e.preventDefault();
+                //         splide.go('<');
+                //     });
+                // }
+                // if (nextBtn) {
+                //     nextBtn.addEventListener('click', function(e) {
+                //         e.preventDefault();
+                //         splide.go('>');
+                //     });
+                // }
             } catch (error) {
                 console.error('Splide initialization error:', error);
             }
