@@ -68,51 +68,43 @@
         <nav class="hidden lg:flex sticky top-18 z-40 bg-primary shadow-md">
             <ul class="menu menu-horizontal max-w-6xl mx-auto w-full px-4 text-base-100 text-[14pt] text-bold">
                 <li><a href="/" class="font-semibold">🏠 Home</a></li>
-                <li>
-                    <details>
-                        <summary class="font-semibold">📚 About</summary>
-                        <ul class="bg-base-100 text-primary rounded-lg shadow-lg p-2 w-48">
-                            <li><a href="/about/history">History & Heritage</a></li>
-                            <li><a href="/about/mission-vision">Mission & Vision</a></li>
-                            <li><a href="/about/faculty-and-staff">Organization</a></li>
-                            <li><a href="/about/accreditation">Accreditation</a></li>
-                        </ul>
-                    </details>
+                <li class="dropdown">
+                    <div tabindex="0" role="button" class="font-semibold flex items-center gap-1">📚 About <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg></div>
+                    <ul tabindex="-1" class="dropdown-content menu bg-base-100 text-primary rounded-lg z-1 w-48 p-2 shadow-lg accordion">
+                        <li><a href="/about/history" class="accordion-item">History & Heritage</a></li>
+                        <li><a href="/about/mission-vision" class="accordion-item">Mission & Vision</a></li>
+                        <li><a href="/about/faculty-and-staff" class="accordion-item">Organization</a></li>
+                        <li><a href="/about/accreditation" class="accordion-item">Accreditation</a></li>
+                    </ul>
                 </li>
-                <li>
-                    <details>
-                        <summary class="font-semibold">🎓 Academic Programs</summary>
-                        <ul class="bg-base-100 text-primary rounded-lg shadow-lg p-2 w-48">
-                            <li><a href="/programs">All Programs</a></li>
-                            <li><a href="/programs#pre-school">Pre-school</a></li>
-                            <li><a href="/programs#elementary">Elementary</a></li>
-                            <li><a href="/programs#junior-high">Junior High</a></li>
-                            <li><a href="/programs#senior-high">Senior High</a></li>
-                            <li><a href="/programs#college">College</a></li>
-                        </ul>
-                    </details>
+                <li class="dropdown">
+                    <div tabindex="0" role="button" class="font-semibold flex items-center gap-1">🎓 Academic Programs <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg></div>
+                    <ul tabindex="-1" class="dropdown-content menu bg-base-100 text-primary rounded-lg z-1 w-56 p-2 shadow-lg accordion">
+                        <li><a href="/programs" class="accordion-item">All Programs</a></li>
+                        <li><a href="/programs#pre-school" class="accordion-item">Pre-school</a></li>
+                        <li><a href="/programs#elementary" class="accordion-item">Elementary</a></li>
+                        <li><a href="/programs#junior-high" class="accordion-item">Junior High</a></li>
+                        <li><a href="/programs#senior-high" class="accordion-item">Senior High</a></li>
+                        <li><a href="/programs#college" class="accordion-item">College</a></li>
+                    </ul>
                 </li>
                 <li><a href="/admission" class="font-semibold">📝 Admission</a></li>
-                <li>
-                    <details>
-                        <summary class="font-semibold">📰 News & Events</summary>
-                        <ul class="bg-base-100 text-primary rounded-lg shadow-lg p-2 w-60">
-                            <li><a href="/announcements">📢 Announcements</a></li>
-                            <li><a href="/events">📅 Events</a></li>
-                            <li><a href="/articles">📰 Articles</a></li>
-                        </ul>
-                    </details>
+                <li class="dropdown">
+                    <div tabindex="0" role="button" class="font-semibold flex items-center gap-1">📰 News & Events <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg></div>
+                    <ul tabindex="-1" class="dropdown-content menu bg-base-100 text-primary rounded-lg z-1 w-60 p-2 shadow-lg accordion">
+                        <li><a href="/announcements" class="accordion-item">📢 Announcements</a></li>
+                        <li><a href="/events" class="accordion-item">📅 Events</a></li>
+                        <li><a href="/articles" class="accordion-item">📰 Articles</a></li>
+                    </ul>
                 </li>
-                <li>
-                    <details>
-                        <summary class="font-semibold">🔗 Services</summary>
-                        <ul class="bg-base-100 text-primary rounded-lg shadow-lg p-2 w-48">
-                            <li><a href="/alumni">Alumni</a></li>
-                            <li><a href="/library">Library</a></li>
-                            <li><a href="/student-services">Student Services</a></li>
-                            <li><a href="https://siccollegeregistrar.com/" target="_blank">Registrar</a></li>
-                        </ul>
-                    </details>
+                <li class="dropdown">
+                    <div tabindex="0" role="button" class="font-semibold flex items-center gap-1">🔗 Services <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg></div>
+                    <ul tabindex="-1" class="dropdown-content menu bg-base-100 text-primary rounded-lg z-1 w-48 p-2 shadow-lg accordion">
+                        <li><a href="/alumni" class="accordion-item">Alumni</a></li>
+                        <li><a href="/library" class="accordion-item">Library</a></li>
+                        <li><a href="/student-services" class="accordion-item">Student Services</a></li>
+                        <li><a href="https://siccollegeregistrar.com/" target="_blank" class="accordion-item">Registrar</a></li>
+                    </ul>
                 </li>
                 <li><a href="/contact" class="font-semibold">✉️ Contact</a></li>
             </ul>
@@ -127,11 +119,52 @@
                 <h3 class="font-bold text-lg mb-4">Navigation</h3>
                 <ul class="menu bg-base-100 rounded-lg space-y-2 text-[14pt]">
                     <li><a href="/">🏠 Home</a></li>
-                    <li><a href="/about">📚 About</a></li>
-                    <li><a href="/programs">🎓 Academic Programs</a></li>
+                    <li>
+                        <details>
+                            <summary class="font-semibold">📚 About</summary>
+                            <ul class="bg-base-200 rounded-lg p-2 space-y-1">
+                                <li><a href="/about/history">History & Heritage</a></li>
+                                <li><a href="/about/mission-vision">Mission & Vision</a></li>
+                                <li><a href="/about/faculty-and-staff">Organization</a></li>
+                                <li><a href="/about/accreditation">Accreditation</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary class="font-semibold">🎓 Academic Programs</summary>
+                            <ul class="bg-base-200 rounded-lg p-2 space-y-1">
+                                <li><a href="/programs">All Programs</a></li>
+                                <li><a href="/programs#pre-school">Pre-school</a></li>
+                                <li><a href="/programs#elementary">Elementary</a></li>
+                                <li><a href="/programs#junior-high">Junior High</a></li>
+                                <li><a href="/programs#senior-high">Senior High</a></li>
+                                <li><a href="/programs#college">College</a></li>
+                            </ul>
+                        </details>
+                    </li>
                     <li><a href="/admission">📝 Admission</a></li>
-                    <li><a href="/announcements">📰 News & Events</a></li>
-                    <li><a href="/services">🔗 Services</a></li>
+                    <li>
+                        <details>
+                            <summary class="font-semibold">📰 News & Events</summary>
+                            <ul class="bg-base-200 rounded-lg p-2 space-y-1">
+                                <li><a href="/announcements">📢 Announcements</a></li>
+                                <li><a href="/events">📅 Events</a></li>
+                                <li><a href="/articles">📰 Articles</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary class="font-semibold">🔗 Services</summary>
+                            <ul class="bg-base-200 rounded-lg p-2 space-y-1">
+                                <li><a href="/alumni">Alumni</a></li>
+                                <li><a href="/library">Library</a></li>
+                                <li><a href="/student-services">Student Services</a></li>
+                                <li><a href="https://siccollegeregistrar.com/" target="_blank">Registrar</a></li>
+                            </ul>
+                        </details>
+                    </li>
                     <li><a href="/contact">✉️ Contact</a></li>
                 </ul>
             </div>
