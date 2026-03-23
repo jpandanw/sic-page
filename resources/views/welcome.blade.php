@@ -26,7 +26,7 @@
             <li class="splide__slide relative">
                 <div class="w-full h-screen bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
                     <div class="text-center text-white">
-                        <h2 class="text-4xl font-bold mb-4">Welcome to San Isidro College</h2>
+                        <h2 class="text-xl font-bold mb-4">Welcome to San Isidro College</h2>
                         <p class="text-xl">No carousel images available</p>
                     </div>
                 </div>
@@ -52,10 +52,7 @@
     <div class="max-w-5xl mx-auto px-4 md:px-8 relative z-10">
         <!-- Section Header with Animation -->
         <div class="text-center mb-16" data-aos="fade-up">
-            <div class="inline-block mb-4 px-6 py-2 bg-gradient-to-r from-primary to-secondary text-white rounded-full font-semibold text-sm tracking-widest">
-                📢 FROM OUR LEADERSHIP
-            </div>
-            <h2 class="text-4xl md:text-5xl font-bold mb-4 text-base-900 font-outfit">Message from the School President</h2>
+            <h2 class="text-2xl md:text-3xl font-bold mb-4 text-base-900 font-outfit">Message from the School President</h2>
             <div class="h-1 bg-gradient-to-r from-primary via-primary to-secondary w-32 mx-auto rounded-full"></div>
         </div>
 
@@ -80,7 +77,7 @@
                         <div class="inline-block">
                             <h3 class="text-xs font-semibold text-primary uppercase tracking-[0.15em] bg-primary/10 px-3 py-1 rounded-full w-fit">✨ Leadership</h3>
                         </div>
-                        <h2 class="text-3xl md:text-4xl font-bold text-base-900 font-outfit">FR. VIRGILIO H. DELFIN</h2>
+                        <h2 class="text-xl md:text-xl font-bold text-base-900 font-outfit">FR. VIRGILIO H. DELFIN</h2>
                         <p class="text-lg font-semibold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">School President</p>
                     </div>
 
@@ -113,7 +110,7 @@
             <div class="inline-block mb-4 px-6 py-2 bg-gradient-to-r from-secondary to-accent text-white rounded-full font-semibold text-sm tracking-widest">
                 🎓 YOUR FUTURE
             </div>
-            <h2 class="text-4xl md:text-5xl font-bold mb-4 text-base-900 font-outfit">Explore Our Programs</h2>
+            <h2 class="text-xl md:text-xl font-bold mb-4 text-base-900 font-outfit">Explore Our Programs</h2>
             <p class="text-xl text-base-700 mb-4">Choose a pathway that matches your dreams and aspirations</p>
             <div class="h-1 bg-gradient-to-r from-secondary via-accent to-primary w-32 mx-auto rounded-full"></div>
         </div>
@@ -184,7 +181,7 @@
             <div class="inline-block mb-4 px-6 py-2 bg-gradient-to-r from-secondary to-primary text-white rounded-full font-semibold text-sm tracking-widest">
                 📅 STAY CONNECTED
             </div>
-            <h2 class="text-4xl md:text-5xl font-bold mb-3 text-base-900 font-outfit">Upcoming Events</h2>
+            <h2 class="text-xl md:text-xl font-bold mb-3 text-base-900 font-outfit">Upcoming Events</h2>
             <p class="text-xl text-base-700 mb-4">Join exciting activities and celebrate with the SIC community</p>
             <div class="h-1 bg-gradient-to-r from-secondary via-primary to-accent w-32 mx-auto rounded-full"></div>
         </div>
@@ -235,7 +232,7 @@
             <div class="inline-block mb-4 px-6 py-2 bg-gradient-to-r from-accent to-secondary text-white rounded-full font-semibold text-sm tracking-widest">
                 📰 LATEST NEWS
             </div>
-            <h2 class="text-4xl md:text-5xl font-bold mb-3 text-base-900 font-outfit">Latest Announcements</h2>
+            <h2 class="text-xl md:text-xl font-bold mb-3 text-base-900 font-outfit">Latest Announcements</h2>
             <p class="text-xl text-base-700 mb-4">Important updates and exciting news from the college</p>
             <div class="h-1 bg-gradient-to-r from-accent via-secondary to-primary w-32 mx-auto rounded-full"></div>
         </div>
@@ -292,7 +289,7 @@
 
     <div class="max-w-4xl mx-auto px-4 md:px-8 text-center relative z-10">
         <div data-aos="fade-up">
-            <h2 class="text-4xl md:text-5xl font-bold mb-6 font-outfit drop-shadow-lg">Ready to Join Our Community?</h2>
+            <h2 class="text-xl md:text-xl font-bold mb-6 font-outfit drop-shadow-lg">Ready to Join Our Community?</h2>
             <p class="text-xl mb-8 opacity-95 max-w-2xl mx-auto drop-shadow">Start your extraordinary journey at San Isidro College and discover endless possibilities for growth and success</p>
         </div>
 
