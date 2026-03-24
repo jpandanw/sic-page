@@ -110,7 +110,7 @@
                             class="h-14 w-auto"
                         />
                         <div
-                            class="flex flex-col text-start justify-start hidden sm:flex"
+                            class="flex flex-col text-start justify-start "
                         >
                             <span class="font-bold text-lg leading-tight"
                                 >San Isidro College</span
