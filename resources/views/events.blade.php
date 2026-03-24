@@ -15,7 +15,10 @@ use Carbon\Carbon;
 
 
 @section('body')
-    <img src="/storage/{{ $event['image_url'] }}" class="object-cover h-full max-h-180 w-full">
+      <div class="w-full h-full flex items-center justify-center h-full aspect-video">
+        <img src="/storage/{{ $event['image_url'] }}" class="object-cover h-full">
+    </div>
+
 
     <div class="max-w-5xl  mx-auto mt-5">
         <div class="breadcrumbs text-sm">

@@ -17,6 +17,7 @@
 
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         @yield('scripts')
+
     </head>
     <body class="relative bg-base-200 min-h-screen">
         <!-- Top Header with Contact Info -->

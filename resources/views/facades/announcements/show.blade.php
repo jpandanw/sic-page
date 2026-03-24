@@ -12,7 +12,9 @@ use Carbon\Carbon;
 @section('body')
     <!-- Hero Image -->
     @if ($announcement->image_url)
-        <img src="/storage/{{ $announcement->image_url }}" alt="{{ $announcement->title }}" class="object-cover h-full max-h-96 w-full">
+    <div class="w-full h-full flex items-center justify-center h-full aspect-ratio">
+            <img src="/storage/{{ $announcement->image_url }}" alt="{{ $announcement->title }}" class="object-cover">
+    </div>
     @else
         <div class="bg-gradient-to-r from-primary to-secondary h-96 w-full flex items-center justify-center">
             <div class="text-center text-white">
